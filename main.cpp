@@ -1,10 +1,17 @@
 #include "player.hpp"
-#include <iostream>
+#include "menubar.hpp"
+
 #include <QFile>
-#include <QCoreApplication>
+#include <QApplication>
+#include <QWidget>
 int main(int argc, char *argv[]) {
-    QCoreApplication a(argc, argv);
+    QApplication app(argc, argv);
+    QFile file("config.json");
     Player player("rason", 17);
-    std::cout << "QtVersion" << qVersion() << std::endl;
-    return 0;
+    SimpleMenu window;
+
+    window.resize(250, 150); // изменяем размер виджета
+    window.setWindowTitle("Hacker: The Game"); // устанавливаем заголовок для главного окна
+    window.show(); // выводим виджет на экране
+    return app.exec();
 }

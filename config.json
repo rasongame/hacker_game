@@ -1,16 +1,8 @@
 {
     "player": {
-        "age": 0,
-        "level": 1,
-        "name": "bob",
-        "skill": 1
-    }
-}
-{
-    "player": {
-        "age": 0,
-        "level": 1,
-        "name": "bob",
-        "skill": 1
+        "age": "17",
+        "level": "1",
+        "name": "rason",
+        "skill": "1"
     }
 }

@@ -2,7 +2,11 @@
 #include <string>
 #include <QFile>
 #include <QTextStream>
+#include <QObject>
+#include <iostream>
 class Player {
+
+
 private:
     int _age;
     int _skill;
@@ -11,7 +15,7 @@ private:
 public:
     Player(std::string name,int age);
     std::string getName() { return this->_name; };
-    int getskill() { return this->_skill; };
+    int skill() { return this->_skill; };
     int level() { return this->_level; };
     int age() { return this->_age; };
     void setSkill(int skill);
@@ -19,5 +23,4 @@ public:
     void setAge(int age);
     int loadSaveFile(QFile *file);
     int saveToSaveFile(QFile *file);
-
 };

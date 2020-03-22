@@ -204,32 +204,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mainwindow.o: mainwindow.cpp.o
+menubar.o: menubar.cpp.o
 
-.PHONY : mainwindow.o
+.PHONY : menubar.o
 
 # target to build an object file
-mainwindow.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mainwindow.cpp.o
-.PHONY : mainwindow.cpp.o
+menubar.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/menubar.cpp.o
+.PHONY : menubar.cpp.o
 
-mainwindow.i: mainwindow.cpp.i
+menubar.i: menubar.cpp.i
 
-.PHONY : mainwindow.i
+.PHONY : menubar.i
 
 # target to preprocess a source file
-mainwindow.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mainwindow.cpp.i
-.PHONY : mainwindow.cpp.i
+menubar.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/menubar.cpp.i
+.PHONY : menubar.cpp.i
 
-mainwindow.s: mainwindow.cpp.s
+menubar.s: menubar.cpp.s
 
-.PHONY : mainwindow.s
+.PHONY : menubar.s
 
 # target to generate assembly for a file
-mainwindow.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mainwindow.cpp.s
-.PHONY : mainwindow.cpp.s
+menubar.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/menubar.cpp.s
+.PHONY : menubar.cpp.s
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mainwindow.o"
-	@echo "... mainwindow.i"
-	@echo "... mainwindow.s"
+	@echo "... menubar.o"
+	@echo "... menubar.i"
+	@echo "... menubar.s"
 .PHONY : help
 
 

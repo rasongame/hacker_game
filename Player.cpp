@@ -3,7 +3,7 @@
 #include <iostream>
 Player::Player(std::string name, int age) {
     this->_name  = name;
-    this->setLevel(age);
+    this->setAge(age);
     this->setLevel(1);
     this->setSkill(1);
 

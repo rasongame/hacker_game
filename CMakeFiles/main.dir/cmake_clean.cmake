@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/Player.cpp.o"
   "CMakeFiles/main.dir/PlayerSave.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o"
-  "CMakeFiles/main.dir/mainwindow.cpp.o"
+  "CMakeFiles/main.dir/menubar.cpp.o"
   "main"
   "main.pdb"
 )

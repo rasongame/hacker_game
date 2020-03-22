@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rason/src/cpp/hacker_game/Player.cpp" "/home/rason/src/cpp/hacker_game/CMakeFiles/main.dir/Player.cpp.o"
   "/home/rason/src/cpp/hacker_game/PlayerSave.cpp" "/home/rason/src/cpp/hacker_game/CMakeFiles/main.dir/PlayerSave.cpp.o"
   "/home/rason/src/cpp/hacker_game/main.cpp" "/home/rason/src/cpp/hacker_game/CMakeFiles/main.dir/main.cpp.o"
-  "/home/rason/src/cpp/hacker_game/mainwindow.cpp" "/home/rason/src/cpp/hacker_game/CMakeFiles/main.dir/mainwindow.cpp.o"
+  "/home/rason/src/cpp/hacker_game/menubar.cpp" "/home/rason/src/cpp/hacker_game/CMakeFiles/main.dir/menubar.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

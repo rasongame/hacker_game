@@ -70,9 +70,22 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rason/src/cpp/hacker_game/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
+CMakeFiles/main.dir/menubar.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/menubar.cpp.o: menubar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rason/src/cpp/hacker_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/menubar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/menubar.cpp.o -c /home/rason/src/cpp/hacker_game/menubar.cpp
+
+CMakeFiles/main.dir/menubar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/menubar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rason/src/cpp/hacker_game/menubar.cpp > CMakeFiles/main.dir/menubar.cpp.i
+
+CMakeFiles/main.dir/menubar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/menubar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rason/src/cpp/hacker_game/menubar.cpp -o CMakeFiles/main.dir/menubar.cpp.s
+
 CMakeFiles/main.dir/PlayerSave.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/PlayerSave.cpp.o: PlayerSave.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rason/src/cpp/hacker_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/PlayerSave.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rason/src/cpp/hacker_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/PlayerSave.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/PlayerSave.cpp.o -c /home/rason/src/cpp/hacker_game/PlayerSave.cpp
 
 CMakeFiles/main.dir/PlayerSave.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/main.dir/PlayerSave.cpp.s: cmake_force
 
 CMakeFiles/main.dir/Player.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Player.cpp.o: Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rason/src/cpp/hacker_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rason/src/cpp/hacker_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/Player.cpp.o -c /home/rason/src/cpp/hacker_game/Player.cpp
 
 CMakeFiles/main.dir/Player.cpp.i: cmake_force
@@ -96,33 +109,20 @@ CMakeFiles/main.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rason/src/cpp/hacker_game/Player.cpp -o CMakeFiles/main.dir/Player.cpp.s
 
-CMakeFiles/main.dir/mainwindow.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/mainwindow.cpp.o: mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rason/src/cpp/hacker_game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/mainwindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/mainwindow.cpp.o -c /home/rason/src/cpp/hacker_game/mainwindow.cpp
-
-CMakeFiles/main.dir/mainwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rason/src/cpp/hacker_game/mainwindow.cpp > CMakeFiles/main.dir/mainwindow.cpp.i
-
-CMakeFiles/main.dir/mainwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rason/src/cpp/hacker_game/mainwindow.cpp -o CMakeFiles/main.dir/mainwindow.cpp.s
-
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
+"CMakeFiles/main.dir/menubar.cpp.o" \
 "CMakeFiles/main.dir/PlayerSave.cpp.o" \
-"CMakeFiles/main.dir/Player.cpp.o" \
-"CMakeFiles/main.dir/mainwindow.cpp.o"
+"CMakeFiles/main.dir/Player.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
+main: CMakeFiles/main.dir/menubar.cpp.o
 main: CMakeFiles/main.dir/PlayerSave.cpp.o
 main: CMakeFiles/main.dir/Player.cpp.o
-main: CMakeFiles/main.dir/mainwindow.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/lib/libQt5Widgets.so.5.14.1
 main: /usr/lib/libQt5Gui.so.5.14.1
