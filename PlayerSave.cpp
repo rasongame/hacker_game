@@ -37,9 +37,11 @@ int Player::saveToSaveFile(QFile *file) {
     auto config = QJsonDocument::fromJson(configJson.toUtf8(), &parseError);
     qWarning("%s", parseError);
     qInfo("writing to save file");
-    qInfo("Player name: %s", this->_name);
+    qInfo("Player name: %s", QString::fromStdString(this->getName()));
     // config["player"].toObject()["age"] = config["player"].toObject()["age"].toInt()++;
-    config["player"]["name"] = QString::fromStdString(self->getName());
+    auto player = config["player"].toObject();
+    config["player"]["name"] = QString::fromStdString(this->getName());
+    config["player"] = player;
     file->write(config.toJson());
     file->close();
     return 0;

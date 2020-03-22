@@ -7,7 +7,7 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
+SET(CMAKE_CXX_FLAGS "-fpermissive")
 add_executable(main main.cpp PlayerSave.cpp player.hpp Player.cpp mainwindow.ui mainwindow.cpp)
 target_link_libraries(main Qt5::Widgets)
 

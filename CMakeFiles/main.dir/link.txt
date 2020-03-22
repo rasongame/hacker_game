@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/PlayerSave.cpp.o CMakeFiles/main.dir/Player.cpp.o CMakeFiles/main.dir/mainwindow.cpp.o  -o main  /usr/lib/libQt5Widgets.so.5.14.1 /usr/lib/libQt5Gui.so.5.14.1 /usr/lib/libQt5Core.so.5.14.1 
+/usr/bin/c++  -fpermissive   CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/PlayerSave.cpp.o CMakeFiles/main.dir/Player.cpp.o CMakeFiles/main.dir/mainwindow.cpp.o  -o main  /usr/lib/libQt5Widgets.so.5.14.1 /usr/lib/libQt5Gui.so.5.14.1 /usr/lib/libQt5Core.so.5.14.1 
