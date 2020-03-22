@@ -1,11 +1,10 @@
-﻿
+﻿#pragma once
 #include <string>
 #include <QFile>
 #include <QTextStream>
 #include <QObject>
 #include <iostream>
 class Player {
-
 
 private:
     int _age;

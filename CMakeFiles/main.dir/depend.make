@@ -276,6 +276,10 @@ CMakeFiles/main.dir/main.cpp.o: /usr/include/qt/QtWidgets/qwidget.h
 
 CMakeFiles/main.dir/menubar.cpp.o: menubar.cpp
 CMakeFiles/main.dir/menubar.cpp.o: menubar.hpp
+CMakeFiles/main.dir/menubar.cpp.o: player.hpp
+CMakeFiles/main.dir/menubar.cpp.o: /usr/include/qt/QtCore/QFile
+CMakeFiles/main.dir/menubar.cpp.o: /usr/include/qt/QtCore/QObject
+CMakeFiles/main.dir/menubar.cpp.o: /usr/include/qt/QtCore/QTextStream
 CMakeFiles/main.dir/menubar.cpp.o: /usr/include/qt/QtCore/qalgorithms.h
 CMakeFiles/main.dir/menubar.cpp.o: /usr/include/qt/QtCore/qarraydata.h
 CMakeFiles/main.dir/menubar.cpp.o: /usr/include/qt/QtCore/qatomic.h

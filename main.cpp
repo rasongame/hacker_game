@@ -1,6 +1,5 @@
 #include "player.hpp"
 #include "menubar.hpp"
-
 #include <QFile>
 #include <QApplication>
 #include <QWidget>
