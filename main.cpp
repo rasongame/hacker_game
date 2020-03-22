@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
     QFile file("config.json");
     Player player("rason", 17);
-    SimpleMenu window;
+    SimpleMenu window(&player);
 
     window.resize(250, 150); // изменяем размер виджета
     window.setWindowTitle("Hacker: The Game"); // устанавливаем заголовок для главного окна

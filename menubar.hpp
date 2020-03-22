@@ -6,5 +6,5 @@
 class SimpleMenu : public QMainWindow {
 
   public:
-    SimpleMenu(QWidget *parent = 0);
+    SimpleMenu(Player *player, QWidget *parent = 0);
 };
