@@ -4,7 +4,7 @@
 #include <QFile>
 #include <QMenuBar>
 #include "player.hpp"
-SimpleMenu::SimpleMenu(Player *player, QWidget *parent)
+SimpleMenu::SimpleMenu(Player *player, QFile *s_file, QWidget *parent)
     : QMainWindow(parent) {
 
   // Создаём объект класса QAction (действие) с названием пункта меню "Quit"
@@ -22,9 +22,8 @@ SimpleMenu::SimpleMenu(Player *player, QWidget *parent)
   file->addAction(load_save_act);
 
   // Когда мы выбираем в меню опцию "Quit", то приложение сразу же завершает своё выполнение
-  QFile s_file("config.json");
   connect(quit_act, &QAction::triggered, quit_act,[=]{
-    player->saveToSaveFile(&s_file);
+    player->saveToSaveFile(s_file);
   });
   // connect(quit, &QAction::triggered, qApp, QApplication::quit);
   // connect(quit, &QAction::triggered, qApp, QApplication::quit);

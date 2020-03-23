@@ -57,6 +57,29 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake"
   "/usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake"
   "/usr/lib64/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake"
+  "/usr/lib64/cmake/Qt5Network/Qt5NetworkConfig.cmake"
+  "/usr/lib64/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake"
+  "/usr/lib64/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake"
+  "/usr/lib64/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
+  "/usr/lib64/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5QmlConfig.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlPreviewServiceFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake"
+  "/usr/lib64/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake"
+  "/usr/lib64/cmake/Qt5QmlModels/Qt5QmlModelsConfig.cmake"
+  "/usr/lib64/cmake/Qt5QmlModels/Qt5QmlModelsConfigVersion.cmake"
+  "/usr/lib64/cmake/Qt5Quick/Qt5QuickConfig.cmake"
+  "/usr/lib64/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
   "/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"
@@ -88,10 +111,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/main_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/main_autogen.dir/DependInfo.cmake"
   )

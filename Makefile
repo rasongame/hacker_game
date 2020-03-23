@@ -123,6 +123,19 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named main_autogen
+
+# Build rule for target.
+main_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_autogen
+.PHONY : main_autogen
+
+# fast build rule for target.
+main_autogen/fast:
+	$(MAKE) -f CMakeFiles/main_autogen.dir/build.make CMakeFiles/main_autogen.dir/build
+.PHONY : main_autogen/fast
+
 Player.o: Player.cpp.o
 
 .PHONY : Player.o
@@ -177,6 +190,60 @@ PlayerSave.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/PlayerSave.cpp.s
 .PHONY : PlayerSave.cpp.s
 
+appcore.o: appcore.cpp.o
+
+.PHONY : appcore.o
+
+# target to build an object file
+appcore.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/appcore.cpp.o
+.PHONY : appcore.cpp.o
+
+appcore.i: appcore.cpp.i
+
+.PHONY : appcore.i
+
+# target to preprocess a source file
+appcore.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/appcore.cpp.i
+.PHONY : appcore.cpp.i
+
+appcore.s: appcore.cpp.s
+
+.PHONY : appcore.s
+
+# target to generate assembly for a file
+appcore.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/appcore.cpp.s
+.PHONY : appcore.cpp.s
+
+ledit.o: ledit.cpp.o
+
+.PHONY : ledit.o
+
+# target to build an object file
+ledit.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ledit.cpp.o
+.PHONY : ledit.cpp.o
+
+ledit.i: ledit.cpp.i
+
+.PHONY : ledit.i
+
+# target to preprocess a source file
+ledit.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ledit.cpp.i
+.PHONY : ledit.cpp.i
+
+ledit.s: ledit.cpp.s
+
+.PHONY : ledit.s
+
+# target to generate assembly for a file
+ledit.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ledit.cpp.s
+.PHONY : ledit.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -203,6 +270,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+main_autogen/mocs_compilation.o: main_autogen/mocs_compilation.cpp.o
+
+.PHONY : main_autogen/mocs_compilation.o
+
+# target to build an object file
+main_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o
+.PHONY : main_autogen/mocs_compilation.cpp.o
+
+main_autogen/mocs_compilation.i: main_autogen/mocs_compilation.cpp.i
+
+.PHONY : main_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+main_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.i
+.PHONY : main_autogen/mocs_compilation.cpp.i
+
+main_autogen/mocs_compilation.s: main_autogen/mocs_compilation.cpp.s
+
+.PHONY : main_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+main_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s
+.PHONY : main_autogen/mocs_compilation.cpp.s
 
 menubar.o: menubar.cpp.o
 
@@ -240,15 +334,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... edit_cache"
+	@echo "... main_autogen"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
 	@echo "... PlayerSave.o"
 	@echo "... PlayerSave.i"
 	@echo "... PlayerSave.s"
+	@echo "... appcore.o"
+	@echo "... appcore.i"
+	@echo "... appcore.s"
+	@echo "... ledit.o"
+	@echo "... ledit.i"
+	@echo "... ledit.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main_autogen/mocs_compilation.o"
+	@echo "... main_autogen/mocs_compilation.i"
+	@echo "... main_autogen/mocs_compilation.s"
 	@echo "... menubar.o"
 	@echo "... menubar.i"
 	@echo "... menubar.s"

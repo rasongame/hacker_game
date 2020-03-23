@@ -20,6 +20,7 @@ public:
     void setSkill(int skill);
     void setLevel(int level);
     void setAge(int age);
+	void setName(std::string name) { this->_name = name; };
     int loadSaveFile(QFile *file);
     int saveToSaveFile(QFile *file);
 };
