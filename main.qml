@@ -1,5 +1,7 @@
 ﻿import QtQuick 2.0
-import QtQuick.Controls 1.0
+import QtQuick.Controls 2.13
+import QtQuick.Window 2.2
+
 ApplicationWindow
 {
     objectName: "Window"
@@ -9,12 +11,28 @@ ApplicationWindow
     title: qsTr("Hacker: The Game")
     Connections {
         target: appCore
-
-        onSendToQml:{
-            console.log(string)
+        onSendToQml: {
+            age_label.text = age
+            skill_label.text = skill
+            level_label.text = level
+            name_label.text = name
         }
     }
-        Grid {
+    menuBar: MenuBar {
+        Menu {
+            title: qsTr("File")
+            Action {
+                text: qsTr("Save")
+            }
+            Action {
+                text: qsTr("Close")
+                onTriggered: Qt.quit()
+            }
+
+        }
+    }
+
+    Grid {
         id: grid
         x: 61
         y: 32
@@ -70,8 +88,12 @@ ApplicationWindow
         x: 61
         y: 75
         text: qsTr("Assign")
-        onClicked:
-            appCore.receiveFromQml(name_label.text)
+        onClicked: {
+            appCore.receiveFromQml(textInput.text,
+                                   textInput3.text,
+                                   textInput2.text,
+                                   textInput1.text);
+        }
         antialiasing: true
         transformOrigin: Item.Center
     }

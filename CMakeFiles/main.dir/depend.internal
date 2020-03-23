@@ -156,6 +156,7 @@ CMakeFiles/main.dir/appcore.cpp.o
  /home/rason/src/cpp/hacker_game/appcore.cpp
  /home/rason/src/cpp/hacker_game/appcore.hpp
  /home/rason/src/cpp/hacker_game/player.hpp
+ /usr/include/qt/QtCore/QDebug
  /usr/include/qt/QtCore/QFile
  /usr/include/qt/QtCore/QObject
  /usr/include/qt/QtCore/QString

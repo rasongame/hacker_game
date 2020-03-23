@@ -9,8 +9,8 @@
 /home/rason/src/cpp/hacker_game/appcore.cpp
 appcore.hpp
 /home/rason/src/cpp/hacker_game/appcore.hpp
-player.hpp
-/home/rason/src/cpp/hacker_game/player.hpp
+QDebug
+-
 
 /home/rason/src/cpp/hacker_game/appcore.hpp
 QObject

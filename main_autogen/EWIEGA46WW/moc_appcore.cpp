@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_AppCore_t {
-    QByteArrayData data[5];
-    char stringdata0[41];
+    QByteArrayData data[8];
+    char stringdata0[55];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,11 +35,15 @@ static const qt_meta_stringdata_AppCore_t qt_meta_stringdata_AppCore = {
 QT_MOC_LITERAL(0, 0, 7), // "AppCore"
 QT_MOC_LITERAL(1, 8, 9), // "sendToQml"
 QT_MOC_LITERAL(2, 18, 0), // ""
-QT_MOC_LITERAL(3, 19, 6), // "string"
-QT_MOC_LITERAL(4, 26, 14) // "receiveFromQml"
+QT_MOC_LITERAL(3, 19, 4), // "name"
+QT_MOC_LITERAL(4, 24, 3), // "age"
+QT_MOC_LITERAL(5, 28, 5), // "skill"
+QT_MOC_LITERAL(6, 34, 5), // "level"
+QT_MOC_LITERAL(7, 40, 14) // "receiveFromQml"
 
     },
-    "AppCore\0sendToQml\0\0string\0receiveFromQml"
+    "AppCore\0sendToQml\0\0name\0age\0skill\0"
+    "level\0receiveFromQml"
 };
 #undef QT_MOC_LITERAL
 
@@ -57,16 +61,16 @@ static const uint qt_meta_data_AppCore[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x06 /* Public */,
+       1,    4,   24,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    1,   27,    2, 0x0a /* Public */,
+       7,    4,   33,    2, 0x0a /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int, QMetaType::Int, QMetaType::Int,    3,    4,    5,    6,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int, QMetaType::Int, QMetaType::Int,    3,    4,    5,    6,
 
        0        // eod
 };
@@ -77,14 +81,14 @@ void AppCore::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         auto *_t = static_cast<AppCore *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->sendToQml((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: _t->receiveFromQml((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 0: _t->sendToQml((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
+        case 1: _t->receiveFromQml((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (AppCore::*)(QString );
+            using _t = void (AppCore::*)(QString , int , int , int );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AppCore::sendToQml)) {
                 *result = 0;
                 return;
@@ -134,9 +138,9 @@ int AppCore::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void AppCore::sendToQml(QString _t1)
+void AppCore::sendToQml(QString _t1, int _t2, int _t3, int _t4)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP

@@ -9,7 +9,7 @@ find_package(Qt5 COMPONENTS Widgets Qml Quick REQUIRED)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # SET(CMAKE_CXX_FLAGS "-fpermissive")
-add_executable(main main.cpp ledit.hpp appcore.hpp appcore.cpp ledit.cpp menubar.hpp menubar.cpp PlayerSave.cpp player.hpp Player.cpp)
+add_executable(main main.cpp ledit.hpp main.qml appcore.hpp appcore.cpp ledit.cpp menubar.hpp menubar.cpp PlayerSave.cpp player.hpp Player.cpp)
 target_link_libraries(main Qt5::Widgets Qt5::Widgets Qt5::Qml Qt5::Quick)
 
 #target_link_libraries(main ${CURSES_LIBRARIES})

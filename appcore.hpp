@@ -6,18 +6,18 @@ class AppCore : public QObject
 	Q_OBJECT
 
 public:
-	explicit AppCore(QObject *parent = 0);
+	AppCore(Player *player, QObject *parent = 0);
+	Player *player;
 	virtual ~AppCore() {};
 
 signals:
 	// Сигнал для передачи данных в qml-интерфейс
-	void sendToQml(QString string);
+	void sendToQml(QString name, int age, int skill, int level);
 
 public slots:
 	// Слот для приёма данных из qml-интерфейса
-	void receiveFromQml(QString string);
+	void receiveFromQml(QString name, int age, int skill, int level);
 
 private:
-
-	QString string;  // Счетчик, которым будем оперировать
+	QString string = "";
 };

@@ -155,6 +155,7 @@ CMakeFiles/main.dir/PlayerSave.cpp.o: /usr/include/qt/QtCore/qversiontagging.h
 CMakeFiles/main.dir/appcore.cpp.o: appcore.cpp
 CMakeFiles/main.dir/appcore.cpp.o: appcore.hpp
 CMakeFiles/main.dir/appcore.cpp.o: player.hpp
+CMakeFiles/main.dir/appcore.cpp.o: /usr/include/qt/QtCore/QDebug
 CMakeFiles/main.dir/appcore.cpp.o: /usr/include/qt/QtCore/QFile
 CMakeFiles/main.dir/appcore.cpp.o: /usr/include/qt/QtCore/QObject
 CMakeFiles/main.dir/appcore.cpp.o: /usr/include/qt/QtCore/QString

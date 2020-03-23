@@ -144,11 +144,11 @@
 			[
 				0,
 				1,
-				4,
 				5,
-				7,
+				6,
 				8,
-				10
+				9,
+				11
 			]
 		}
 	],
@@ -217,11 +217,11 @@
 			[
 				0,
 				1,
-				4,
 				5,
-				7,
+				6,
 				8,
-				10
+				9,
+				11
 			]
 		},
 		{
@@ -229,9 +229,16 @@
 			"sourceIndexes" : 
 			[
 				2,
-				3,
-				6,
-				9
+				4,
+				7,
+				10
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3
 			]
 		}
 	],
@@ -254,6 +261,11 @@
 			"backtrace" : 1,
 			"path" : "ledit.hpp",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "main.qml",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,

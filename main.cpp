@@ -18,13 +18,13 @@ int main(int argc, char *argv[]) {
 	Ledit ledit(&player);
 	QQmlApplicationEngine engine;
 	QQmlContext* rootContext = engine.rootContext();
-	AppCore appCore;    // Создаём ядро приложения
+	AppCore appCore(&player);
 	rootContext->setContextProperty("Skill", player.skill());
 	rootContext->setContextProperty("Level", player.level());
 	rootContext->setContextProperty("Age", player.age());
 	rootContext->setContextProperty("Name", QString::fromStdString(player.getName()));
 	rootContext->setContextProperty("appCore", &appCore);
-
+	qDebug() << "Running GUI subsystem.." << endl;
 	engine.load(QUrl(QStringLiteral("main.qml")));
 	return app.exec();
 }

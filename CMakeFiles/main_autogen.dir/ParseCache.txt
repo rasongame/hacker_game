@@ -2,11 +2,11 @@
 /home/rason/src/cpp/hacker_game/ledit.cpp
 /home/rason/src/cpp/hacker_game/main.cpp
 /home/rason/src/cpp/hacker_game/ledit.hpp
-/home/rason/src/cpp/hacker_game/appcore.cpp
 /home/rason/src/cpp/hacker_game/appcore.hpp
  mmc:Q_OBJECT
-/home/rason/src/cpp/hacker_game/menubar.hpp
+/home/rason/src/cpp/hacker_game/appcore.cpp
 /home/rason/src/cpp/hacker_game/menubar.cpp
+/home/rason/src/cpp/hacker_game/menubar.hpp
 /home/rason/src/cpp/hacker_game/player.hpp
-/home/rason/src/cpp/hacker_game/Player.cpp
 /home/rason/src/cpp/hacker_game/PlayerSave.cpp
+/home/rason/src/cpp/hacker_game/Player.cpp
