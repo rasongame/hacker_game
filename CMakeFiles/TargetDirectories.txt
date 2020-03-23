@@ -1,4 +1,0 @@
-/home/rason/src/cpp/hacker_game/CMakeFiles/rebuild_cache.dir
-/home/rason/src/cpp/hacker_game/CMakeFiles/main.dir
-/home/rason/src/cpp/hacker_game/CMakeFiles/edit_cache.dir
-/home/rason/src/cpp/hacker_game/CMakeFiles/main_autogen.dir
