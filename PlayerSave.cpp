@@ -3,6 +3,7 @@
 #include <QString>
 #include <iostream>
 #include <QtGlobal>
+#include <QDebug>
 #include <QJsonObject>
 int Player::loadSaveFile(QFile *file) {
     if(!file->open(QIODevice::ReadOnly)) {
@@ -35,7 +36,7 @@ int Player::saveToSaveFile(QFile *file) {
     file->seek(0);
     QJsonParseError parseError;
     auto config = QJsonDocument::fromJson(configJson.toUtf8(), &parseError);
-	qWarning("%s", parseError);
+	qWarning() << parseError.errorString();
     qInfo("writing to save file");
 	qInfo("Player name: %s", this->getName().c_str());
     // config["player"].toObject()["age"] = config["player"].toObject()["age"].toInt()++;

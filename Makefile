@@ -136,6 +136,33 @@ main_autogen/fast:
 	$(MAKE) -f CMakeFiles/main_autogen.dir/build.make CMakeFiles/main_autogen.dir/build
 .PHONY : main_autogen/fast
 
+Computer.o: Computer.cpp.o
+
+.PHONY : Computer.o
+
+# target to build an object file
+Computer.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Computer.cpp.o
+.PHONY : Computer.cpp.o
+
+Computer.i: Computer.cpp.i
+
+.PHONY : Computer.i
+
+# target to preprocess a source file
+Computer.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Computer.cpp.i
+.PHONY : Computer.cpp.i
+
+Computer.s: Computer.cpp.s
+
+.PHONY : Computer.s
+
+# target to generate assembly for a file
+Computer.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Computer.cpp.s
+.PHONY : Computer.cpp.s
+
 Player.o: Player.cpp.o
 
 .PHONY : Player.o
@@ -335,6 +362,9 @@ help:
 	@echo "... main"
 	@echo "... edit_cache"
 	@echo "... main_autogen"
+	@echo "... Computer.o"
+	@echo "... Computer.i"
+	@echo "... Computer.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"

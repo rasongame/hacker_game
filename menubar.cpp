@@ -1,5 +1,4 @@
-#pragma once
-#include "menubar.hpp"
+﻿#include "menubar.hpp"
 #include <QMenu>
 #include <QFile>
 #include <QMenuBar>

@@ -10,7 +10,7 @@ private:
     int _age;
     int _skill;
     int _level;
-    std::string _name;
+	std::string _name;
 public:
     Player(std::string name,int age);
     std::string getName() { return this->_name; };
