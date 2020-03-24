@@ -14,11 +14,12 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
     QFile file("config.json");
     Player player("rason", 17);
-    SimpleMenu window(&player, &file);
-	Ledit ledit(&player);
 	QQmlApplicationEngine engine;
+	qDebug() << "Running rootContext.." << endl;
+
 	QQmlContext* rootContext = engine.rootContext();
-	AppCore appCore(&player);
+	qDebug() << "runnin appCore.." << endl;
+	AppCore appCore(&player, &file);
 	rootContext->setContextProperty("Skill", player.skill());
 	rootContext->setContextProperty("Level", player.level());
 	rootContext->setContextProperty("Age", player.age());

@@ -1,11 +1,14 @@
 ﻿#include "appcore.hpp"
 #include <QDebug>
 
-AppCore::AppCore(Player *player, QObject *parent) : QObject(parent)
+AppCore::AppCore(Player *player,QFile *saveFile, QObject *parent) : QObject(parent)
 {
+	this->saveFile = saveFile;
 	this->player = player;
 }
-
+void AppCore::savePlayer() {
+	this->player->saveToSaveFile(this->saveFile);
+}
 void AppCore::receiveFromQml(QString name, int age, int skill, int level)
 {
 	this->player->setName(name.toStdString());

@@ -1,13 +1,15 @@
 ﻿#include <QObject>
 #include <QString>
+#include <QFile>
 #include "player.hpp"
 class AppCore : public QObject
 {
 	Q_OBJECT
 
 public:
-	AppCore(Player *player, QObject *parent = 0);
+	AppCore(Player *player,QFile *saveFile, QObject *parent = 0);
 	Player *player;
+	QFile *saveFile;
 	virtual ~AppCore() {};
 
 signals:
@@ -17,7 +19,7 @@ signals:
 public slots:
 	// Слот для приёма данных из qml-интерфейса
 	void receiveFromQml(QString name, int age, int skill, int level);
-
+	void savePlayer();
 private:
 	QString string = "";
 };

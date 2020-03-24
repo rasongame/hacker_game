@@ -1,4 +1,4 @@
-#include "player.hpp"
+﻿#include "player.hpp"
 #include <QJsonDocument>
 #include <QString>
 #include <iostream>
@@ -15,7 +15,6 @@ int Player::loadSaveFile(QFile *file) {
     const auto configJson = configStream.readAll();
     QJsonParseError parseError;
     auto config = QJsonDocument::fromJson(configJson.toUtf8(), &parseError).object();
-    qWarning("%s", parseError);
     const auto player = config["player"].toObject();
     const auto age = player["age"].toInt();
     out << "Name: " << player["name"].toString() << endl;
@@ -26,19 +25,19 @@ int Player::loadSaveFile(QFile *file) {
     return 0;
 }
 int Player::saveToSaveFile(QFile *file) {
-    auto self = this;
-
     if(!file->open(QIODevice::ReadWrite)) {
         return 1;
     }
-    QTextStream configStream(file);
+	QTextStream out(stdout);
+	QTextStream configStream(file);
+
     auto configJson = configStream.readAll();
     file->seek(0);
     QJsonParseError parseError;
     auto config = QJsonDocument::fromJson(configJson.toUtf8(), &parseError);
-    qWarning("%s", parseError);
+	qWarning("%s", parseError);
     qInfo("writing to save file");
-    qInfo("Player name: %s", QString::fromStdString(this->getName()));
+	qInfo("Player name: %s", this->getName().c_str());
     // config["player"].toObject()["age"] = config["player"].toObject()["age"].toInt()++;
     auto configObject = config.object();
     auto player = configObject["player"].toObject();

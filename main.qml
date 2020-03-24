@@ -23,6 +23,7 @@ ApplicationWindow
             title: qsTr("File")
             Action {
                 text: qsTr("Save")
+                onTriggered: appCore.savePlayer()
             }
             Action {
                 text: qsTr("Close")
